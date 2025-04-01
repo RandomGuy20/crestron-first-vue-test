@@ -8,7 +8,9 @@
       
     </navigation-buttons>
 
-    <component :is="activePage"></component>
+    <!-- <component :is="activePage"></component> -->
+
+    <router-view></router-view>
 
 
 
@@ -21,16 +23,16 @@
 
 <script>
 import NavigationButtons from './components/Navigation/NavigationComp.vue'
-import VideoPage from './components/Video/VideoPage.vue'
-import AudioPage from './components/Audio/AudioPage.vue'
+// import VideoPage from './components/Video/VideoPage.vue'
+// import AudioPage from './components/Audio/AudioPage.vue'
 
 export default 
 {
   components: 
   {
     NavigationButtons,
-    VideoPage,
-    AudioPage
+    // VideoPage,
+    // AudioPage
   },
   data() 
   {

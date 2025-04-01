@@ -8,8 +8,11 @@
         </header>
 
         <div class="sub-nav">
-            <button @click="setactivePage('AudioPage')">Audio</button>
-            <button @click="setactivePage('VideoPage')">Video</button>
+          <!-- <button @click="setactivePage('AudioPage')">Audio</button>
+          <button @click="setactivePage('VideoPage')">Video</button> -->
+
+          <router-link to="/audio">Audio</router-link>
+          <router-link to="/video">Video</router-link>
         </div>
 
 
